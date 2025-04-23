@@ -16,5 +16,10 @@ namespace LabProgramacion_Agenda_Semana1
         {
             InitializeComponent();
         }
+
+        private void lblCorreoelectronico_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -50,31 +50,31 @@
             this.Contacto.Controls.Add(this.idContacto);
             this.Contacto.Controls.Add(this.btnEliminar);
             this.Contacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contacto.Location = new System.Drawing.Point(9, 42);
+            this.Contacto.Location = new System.Drawing.Point(26, 27);
             this.Contacto.Name = "Contacto";
-            this.Contacto.Size = new System.Drawing.Size(313, 393);
+            this.Contacto.Size = new System.Drawing.Size(313, 277);
             this.Contacto.TabIndex = 42;
             this.Contacto.TabStop = false;
             this.Contacto.Text = "Contacto";
             // 
             // treeView
             // 
-            this.treeView.Location = new System.Drawing.Point(19, 71);
+            this.treeView.Location = new System.Drawing.Point(9, 71);
             this.treeView.Name = "treeView";
-            this.treeView.Size = new System.Drawing.Size(273, 299);
+            this.treeView.Size = new System.Drawing.Size(283, 179);
             this.treeView.TabIndex = 33;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(33, 31);
+            this.txtid.Location = new System.Drawing.Point(42, 36);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(112, 29);
+            this.txtid.Size = new System.Drawing.Size(47, 29);
             this.txtid.TabIndex = 31;
             // 
             // idContacto
             // 
             this.idContacto.AutoSize = true;
-            this.idContacto.Location = new System.Drawing.Point(5, 31);
+            this.idContacto.Location = new System.Drawing.Point(6, 35);
             this.idContacto.Name = "idContacto";
             this.idContacto.Size = new System.Drawing.Size(30, 24);
             this.idContacto.TabIndex = 30;
@@ -82,9 +82,9 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(149, 28);
+            this.btnEliminar.Location = new System.Drawing.Point(164, 28);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(141, 29);
+            this.btnEliminar.Size = new System.Drawing.Size(115, 31);
             this.btnEliminar.TabIndex = 27;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -92,21 +92,22 @@
             // dgvContactos
             // 
             this.dgvContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvContactos.Location = new System.Drawing.Point(328, 55);
+            this.dgvContactos.Location = new System.Drawing.Point(345, 40);
             this.dgvContactos.Name = "dgvContactos";
             this.dgvContactos.RowHeadersWidth = 62;
-            this.dgvContactos.Size = new System.Drawing.Size(453, 380);
+            this.dgvContactos.Size = new System.Drawing.Size(320, 264);
             this.dgvContactos.TabIndex = 41;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Gainsboro;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.contactoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(677, 24);
             this.menuStrip1.TabIndex = 43;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -135,7 +136,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Thistle;
+            this.ClientSize = new System.Drawing.Size(677, 320);
             this.Controls.Add(this.Contacto);
             this.Controls.Add(this.dgvContactos);
             this.Controls.Add(this.menuStrip1);

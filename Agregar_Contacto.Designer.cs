@@ -70,25 +70,25 @@
             this.Contacto.Controls.Add(this.lblTelefono);
             this.Contacto.Controls.Add(this.lblNombre);
             this.Contacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contacto.Location = new System.Drawing.Point(24, 43);
+            this.Contacto.Location = new System.Drawing.Point(12, 27);
             this.Contacto.Name = "Contacto";
-            this.Contacto.Size = new System.Drawing.Size(621, 384);
+            this.Contacto.Size = new System.Drawing.Size(488, 329);
             this.Contacto.TabIndex = 39;
             this.Contacto.TabStop = false;
             this.Contacto.Text = "Contacto";
             // 
             // treeView
             // 
-            this.treeView.Location = new System.Drawing.Point(377, 27);
+            this.treeView.Location = new System.Drawing.Point(225, 24);
             this.treeView.Name = "treeView";
-            this.treeView.Size = new System.Drawing.Size(236, 329);
+            this.treeView.Size = new System.Drawing.Size(236, 280);
             this.treeView.TabIndex = 33;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(45, 27);
+            this.txtid.Location = new System.Drawing.Point(39, 29);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(127, 29);
+            this.txtid.Size = new System.Drawing.Size(60, 29);
             this.txtid.TabIndex = 31;
             // 
             // idContacto
@@ -102,33 +102,33 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(13, 323);
+            this.btnAgregar.Location = new System.Drawing.Point(6, 256);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(333, 32);
+            this.btnAgregar.Size = new System.Drawing.Size(194, 32);
             this.btnAgregar.TabIndex = 27;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(184, 237);
+            this.txtCorreo.Location = new System.Drawing.Point(55, 170);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(178, 29);
+            this.txtCorreo.Size = new System.Drawing.Size(145, 29);
             this.txtCorreo.TabIndex = 26;
             // 
             // lblCorreoElectronico
             // 
             this.lblCorreoElectronico.AutoSize = true;
-            this.lblCorreoElectronico.Location = new System.Drawing.Point(10, 240);
+            this.lblCorreoElectronico.Location = new System.Drawing.Point(10, 172);
             this.lblCorreoElectronico.Name = "lblCorreoElectronico";
-            this.lblCorreoElectronico.Size = new System.Drawing.Size(173, 24);
+            this.lblCorreoElectronico.Size = new System.Drawing.Size(49, 24);
             this.lblCorreoElectronico.TabIndex = 25;
-            this.lblCorreoElectronico.Text = "Correo Electronico:";
+            this.lblCorreoElectronico.Text = "Mail:";
             // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(10, 281);
+            this.lblCategoria.Location = new System.Drawing.Point(10, 208);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(95, 24);
             this.lblCategoria.TabIndex = 24;
@@ -141,36 +141,36 @@
             "Amigos",
             "Familia",
             "Trabajo"});
-            this.cmbCategorias.Location = new System.Drawing.Point(121, 280);
+            this.cmbCategorias.Location = new System.Drawing.Point(111, 205);
             this.cmbCategorias.Name = "cmbCategorias";
-            this.cmbCategorias.Size = new System.Drawing.Size(197, 32);
+            this.cmbCategorias.Size = new System.Drawing.Size(89, 32);
             this.cmbCategorias.TabIndex = 23;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(95, 186);
+            this.txtTelefono.Location = new System.Drawing.Point(95, 134);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(126, 29);
+            this.txtTelefono.Size = new System.Drawing.Size(105, 29);
             this.txtTelefono.TabIndex = 22;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(95, 126);
+            this.txtApellido.Location = new System.Drawing.Point(95, 99);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(131, 29);
+            this.txtApellido.Size = new System.Drawing.Size(105, 29);
             this.txtApellido.TabIndex = 21;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(95, 73);
+            this.txtNombre.Location = new System.Drawing.Point(95, 63);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(131, 29);
+            this.txtNombre.Size = new System.Drawing.Size(105, 29);
             this.txtNombre.TabIndex = 20;
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(10, 131);
+            this.lblApellido.Location = new System.Drawing.Point(10, 99);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(84, 24);
             this.lblApellido.TabIndex = 19;
@@ -179,7 +179,7 @@
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(10, 189);
+            this.lblTelefono.Location = new System.Drawing.Point(10, 137);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(90, 24);
             this.lblTelefono.TabIndex = 18;
@@ -188,7 +188,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(10, 76);
+            this.lblNombre.Location = new System.Drawing.Point(10, 63);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(84, 24);
             this.lblNombre.TabIndex = 17;
@@ -197,21 +197,22 @@
             // dgvContactos
             // 
             this.dgvContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvContactos.Location = new System.Drawing.Point(672, 51);
+            this.dgvContactos.Location = new System.Drawing.Point(541, 51);
             this.dgvContactos.Name = "dgvContactos";
             this.dgvContactos.RowHeadersWidth = 62;
-            this.dgvContactos.Size = new System.Drawing.Size(268, 373);
+            this.dgvContactos.Size = new System.Drawing.Size(236, 295);
             this.dgvContactos.TabIndex = 38;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Gainsboro;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.contactoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(952, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(792, 24);
             this.menuStrip1.TabIndex = 40;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -240,7 +241,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 450);
+            this.BackColor = System.Drawing.Color.Thistle;
+            this.ClientSize = new System.Drawing.Size(792, 368);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Contacto);
             this.Controls.Add(this.dgvContactos);

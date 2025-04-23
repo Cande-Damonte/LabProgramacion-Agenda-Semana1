@@ -19,7 +19,7 @@ namespace LabProgramacion_Agenda_Semana1
 
         public ConexionBD()
         {
-            cadena = "Provider=Microsoft.ACE.OLEDB.12.0 ;Data Source= AgendaGarcia.accdb";
+            cadena = "Provider=Microsoft.ACE.OLEDB.12.0 ;Data Source= AgendaDamonte.accdb";
         }
         public DataTable ObtenerContactosPorCategoria()
         {
