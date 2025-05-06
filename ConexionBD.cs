@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace LabProgramacion_Agenda_Semana1
 {
     public class ConexionBD
@@ -19,7 +20,7 @@ namespace LabProgramacion_Agenda_Semana1
 
         public ConexionBD()
         {
-            cadena = "Provider=Microsoft.ACE.OLEDB.12.0 ;Data Source= AgendaDamonte.accdb";
+            cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Agenda-Lab3.accdb";
         }
         public DataTable ObtenerContactosPorCategoria()
         {

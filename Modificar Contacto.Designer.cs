@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modificar_Contacto));
             this.lblContacto = new System.Windows.Forms.GroupBox();
             this.treeView = new System.Windows.Forms.TreeView();
             this.dgvContactos = new System.Windows.Forms.DataGridView();
@@ -46,7 +47,7 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.contactoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblContacto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContactos)).BeginInit();
@@ -73,30 +74,30 @@
             this.lblContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContacto.Location = new System.Drawing.Point(10, 26);
             this.lblContacto.Name = "lblContacto";
-            this.lblContacto.Size = new System.Drawing.Size(758, 329);
+            this.lblContacto.Size = new System.Drawing.Size(728, 329);
             this.lblContacto.TabIndex = 42;
             this.lblContacto.TabStop = false;
             this.lblContacto.Text = "Contacto:";
             // 
             // treeView
             // 
-            this.treeView.Location = new System.Drawing.Point(268, 31);
+            this.treeView.Location = new System.Drawing.Point(226, 28);
             this.treeView.Name = "treeView";
-            this.treeView.Size = new System.Drawing.Size(211, 278);
+            this.treeView.Size = new System.Drawing.Size(236, 278);
             this.treeView.TabIndex = 33;
             // 
             // dgvContactos
             // 
             this.dgvContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvContactos.Location = new System.Drawing.Point(519, 31);
+            this.dgvContactos.Location = new System.Drawing.Point(468, 28);
             this.dgvContactos.Name = "dgvContactos";
             this.dgvContactos.RowHeadersWidth = 62;
-            this.dgvContactos.Size = new System.Drawing.Size(216, 278);
+            this.dgvContactos.Size = new System.Drawing.Size(245, 278);
             this.dgvContactos.TabIndex = 41;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(95, 28);
+            this.txtid.Location = new System.Drawing.Point(95, 31);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(55, 29);
             this.txtid.TabIndex = 31;
@@ -104,9 +105,10 @@
             // idContacto
             // 
             this.idContacto.AutoSize = true;
-            this.idContacto.Location = new System.Drawing.Point(59, 31);
+            this.idContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idContacto.Location = new System.Drawing.Point(62, 37);
             this.idContacto.Name = "idContacto";
-            this.idContacto.Size = new System.Drawing.Size(30, 24);
+            this.idContacto.Size = new System.Drawing.Size(27, 20);
             this.idContacto.TabIndex = 30;
             this.idContacto.Text = "Id:";
             // 
@@ -118,10 +120,11 @@
             this.btnModificar.TabIndex = 27;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(57, 165);
+            this.txtCorreo.Location = new System.Drawing.Point(58, 162);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(151, 29);
             this.txtCorreo.TabIndex = 26;
@@ -129,19 +132,20 @@
             // lblCorreoelectronico
             // 
             this.lblCorreoelectronico.AutoSize = true;
-            this.lblCorreoelectronico.Location = new System.Drawing.Point(6, 165);
+            this.lblCorreoelectronico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreoelectronico.Location = new System.Drawing.Point(20, 168);
             this.lblCorreoelectronico.Name = "lblCorreoelectronico";
-            this.lblCorreoelectronico.Size = new System.Drawing.Size(49, 24);
+            this.lblCorreoelectronico.Size = new System.Drawing.Size(41, 20);
             this.lblCorreoelectronico.TabIndex = 25;
             this.lblCorreoelectronico.Text = "Mail:";
-            this.lblCorreoelectronico.Click += new System.EventHandler(this.lblCorreoelectronico_Click);
             // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(6, 201);
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(20, 203);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(95, 24);
+            this.lblCategoria.Size = new System.Drawing.Size(82, 20);
             this.lblCategoria.TabIndex = 24;
             this.lblCategoria.Text = "Categoria:";
             // 
@@ -152,21 +156,21 @@
             "Amigos",
             "Familia",
             "Trabajo"});
-            this.cmbCategorias.Location = new System.Drawing.Point(102, 199);
+            this.cmbCategorias.Location = new System.Drawing.Point(102, 197);
             this.cmbCategorias.Name = "cmbCategorias";
             this.cmbCategorias.Size = new System.Drawing.Size(107, 32);
             this.cmbCategorias.TabIndex = 23;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(95, 132);
+            this.txtTelefono.Location = new System.Drawing.Point(95, 129);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(113, 29);
+            this.txtTelefono.Size = new System.Drawing.Size(114, 29);
             this.txtTelefono.TabIndex = 22;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(95, 99);
+            this.txtApellido.Location = new System.Drawing.Point(95, 97);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(114, 29);
             this.txtApellido.TabIndex = 21;
@@ -181,27 +185,30 @@
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(6, 100);
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Location = new System.Drawing.Point(20, 103);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(84, 24);
+            this.lblApellido.Size = new System.Drawing.Size(69, 20);
             this.lblApellido.TabIndex = 19;
             this.lblApellido.Text = "Apellido:";
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(6, 133);
+            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.Location = new System.Drawing.Point(14, 135);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(90, 24);
+            this.lblTelefono.Size = new System.Drawing.Size(75, 20);
             this.lblTelefono.TabIndex = 18;
             this.lblTelefono.Text = "Telefono:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(6, 65);
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(20, 68);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(84, 24);
+            this.lblNombre.Size = new System.Drawing.Size(69, 20);
             this.lblNombre.TabIndex = 17;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -214,41 +221,48 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(788, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(744, 24);
             this.menuStrip1.TabIndex = 43;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // contactoToolStripMenuItem
             // 
             this.contactoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.modificarToolStripMenuItem,
+            this.agregarToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.contactoToolStripMenuItem.Name = "contactoToolStripMenuItem";
             this.contactoToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
             this.contactoToolStripMenuItem.Text = "Contacto";
             // 
-            // modificarToolStripMenuItem
+            // agregarToolStripMenuItem
             // 
-            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.modificarToolStripMenuItem.Text = "Agregar";
+            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Text = "Agregar";
+            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // Modificar_Contacto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
-            this.ClientSize = new System.Drawing.Size(788, 361);
+            this.ClientSize = new System.Drawing.Size(744, 361);
             this.Controls.Add(this.lblContacto);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Modificar_Contacto";
-            this.Text = "Modificar_Contacto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Modificar Contacto";
+            this.Load += new System.EventHandler(this.Modificar_Contacto_Load);
             this.lblContacto.ResumeLayout(false);
             this.lblContacto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContactos)).EndInit();
@@ -279,7 +293,7 @@
         private System.Windows.Forms.DataGridView dgvContactos;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem contactoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agregar_Contacto));
             this.Contacto = new System.Windows.Forms.GroupBox();
             this.treeView = new System.Windows.Forms.TreeView();
             this.txtid = new System.Windows.Forms.TextBox();
@@ -108,12 +109,13 @@
             this.btnAgregar.TabIndex = 27;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(55, 170);
+            this.txtCorreo.Location = new System.Drawing.Point(80, 170);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(145, 29);
+            this.txtCorreo.Size = new System.Drawing.Size(120, 29);
             this.txtCorreo.TabIndex = 26;
             // 
             // lblCorreoElectronico
@@ -121,9 +123,9 @@
             this.lblCorreoElectronico.AutoSize = true;
             this.lblCorreoElectronico.Location = new System.Drawing.Point(10, 172);
             this.lblCorreoElectronico.Name = "lblCorreoElectronico";
-            this.lblCorreoElectronico.Size = new System.Drawing.Size(49, 24);
+            this.lblCorreoElectronico.Size = new System.Drawing.Size(73, 24);
             this.lblCorreoElectronico.TabIndex = 25;
-            this.lblCorreoElectronico.Text = "Mail:";
+            this.lblCorreoElectronico.Text = "Correo:";
             // 
             // lblCategoria
             // 
@@ -230,12 +232,14 @@
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
+            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // Agregar_Contacto
             // 
@@ -246,8 +250,13 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Contacto);
             this.Controls.Add(this.dgvContactos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Agregar_Contacto";
-            this.Text = "Agregar_Contacto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Agregar Contacto";
+            this.Load += new System.EventHandler(this.Agregar_Contacto_Load);
             this.Contacto.ResumeLayout(false);
             this.Contacto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContactos)).EndInit();
