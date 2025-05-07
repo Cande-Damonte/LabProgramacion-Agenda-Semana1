@@ -30,6 +30,7 @@ namespace LabProgramacion_Agenda_Semana1
             //Se crea una nueva instancia del formulario Agregar_Contacto
             Agregar_Contacto frm = new Agregar_Contacto();
             frm.ShowDialog();
+            this.Hide();
         }
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,6 +38,7 @@ namespace LabProgramacion_Agenda_Semana1
             //permite eliminar contacto
             Eliminar_Contacto frm = new Eliminar_Contacto();
             frm.ShowDialog();
+            this.Hide();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)

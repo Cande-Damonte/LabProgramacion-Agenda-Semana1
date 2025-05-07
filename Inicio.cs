@@ -25,7 +25,7 @@ namespace LabProgramacion_Agenda_Semana1
             //ingresar la información de un nuevo contacto
             Agregar_Contacto frm = new Agregar_Contacto();
             frm.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -33,6 +33,7 @@ namespace LabProgramacion_Agenda_Semana1
             //Permite al usuario cambiar los detalles de un contacto existente.
             Modificar_Contacto frm = new Modificar_Contacto();
             frm.ShowDialog();
+            this.Hide();
         }
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,6 +41,7 @@ namespace LabProgramacion_Agenda_Semana1
             //Eliminar un contacto
             Eliminar_Contacto frm = new Eliminar_Contacto();
             frm.ShowDialog();
+            this.Hide();
         }
 
 

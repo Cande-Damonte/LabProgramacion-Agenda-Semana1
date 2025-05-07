@@ -22,6 +22,7 @@ namespace LabProgramacion_Agenda_Semana1
             // Abre un formulario para eliminar un contacto
             Eliminar_Contacto frm = new Eliminar_Contacto();
             frm.ShowDialog();
+            this.Hide();
         }
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -29,6 +30,7 @@ namespace LabProgramacion_Agenda_Semana1
             //Se crea una nueva instancia del formulario Agregar_Contacto
             Agregar_Contacto frm = new Agregar_Contacto();
             frm.ShowDialog();
+            this.Hide();
         }
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -36,6 +38,7 @@ namespace LabProgramacion_Agenda_Semana1
             //Se crea una nueva instancia del formulario Agregar_Contacto
             Agregar_Contacto frm = new Agregar_Contacto();
             frm.ShowDialog();
+            this.Hide();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

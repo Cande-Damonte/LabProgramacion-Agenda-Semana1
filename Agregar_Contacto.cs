@@ -104,6 +104,7 @@ namespace LabProgramacion_Agenda_Semana1
             //Abre un formulario para modificar un contacto existente
             Modificar_Contacto frm = new Modificar_Contacto();
             frm.ShowDialog();
+            this.Hide();
         }
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -111,6 +112,7 @@ namespace LabProgramacion_Agenda_Semana1
             // Abre un formulario para eliminar un contacto
             Eliminar_Contacto frm = new Eliminar_Contacto();
             frm.ShowDialog();
+            this.Hide();
         }
     }
 
