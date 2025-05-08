@@ -17,27 +17,21 @@ namespace LabProgramacion_Agenda_Semana1
             InitializeComponent();
         }
 
-        private void Eliminar_Contacto_Load(object sender, EventArgs e)
-        {
-            // Abre un formulario para eliminar un contacto
-            Eliminar_Contacto frm = new Eliminar_Contacto();
-            frm.ShowDialog();
-            this.Hide();
-        }
+
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Se crea una nueva instancia del formulario Agregar_Contacto
-            Agregar_Contacto frm = new Agregar_Contacto();
-            frm.ShowDialog();
+            Agregar_Contacto frmAgregar = new Agregar_Contacto();
+            frmAgregar.Show();
             this.Hide();
         }
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Se crea una nueva instancia del formulario Agregar_Contacto
-            Agregar_Contacto frm = new Agregar_Contacto();
-            frm.ShowDialog();
+            Modificar_Contacto frmModificar = new Modificar_Contacto();
+            frmModificar.Show();
             this.Hide();
         }
 
@@ -102,5 +96,18 @@ namespace LabProgramacion_Agenda_Semana1
 
         }
 
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Inicio inicio = new Inicio();
+            inicio.Show();
+            this.Hide();
+        }
+
+        private void Eliminar_Contacto_Load(object sender, EventArgs e)
+        {
+            ConexionBD conexion = new ConexionBD();
+            conexion.listarContactos(dgvContactos);
+            CargarTreeView();
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace LabProgramacion_Agenda_Semana1
 
         private void Modificar_Contacto_Load(object sender, EventArgs e)
         {
-            InitializeComponent();
+
             ConexionBD conexion = new ConexionBD();
             CargarTreeView();
             conexion.listarContactos(dgvContactos);
@@ -29,7 +29,7 @@ namespace LabProgramacion_Agenda_Semana1
         {
             //Se crea una nueva instancia del formulario Agregar_Contacto
             Agregar_Contacto frm = new Agregar_Contacto();
-            frm.ShowDialog();
+            frm.Show();
             this.Hide();
         }
 
@@ -37,7 +37,7 @@ namespace LabProgramacion_Agenda_Semana1
         {
             //permite eliminar contacto
             Eliminar_Contacto frm = new Eliminar_Contacto();
-            frm.ShowDialog();
+            frm.Show();
             this.Hide();
         }
 
@@ -111,6 +111,13 @@ namespace LabProgramacion_Agenda_Semana1
                 nodoCategoria.Nodes.Add(nodoContacto);
             }
 
+        }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Inicio inicio = new Inicio();
+            inicio.Show();
+            this.Hide();
         }
     }
 }

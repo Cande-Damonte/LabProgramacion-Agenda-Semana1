@@ -19,9 +19,7 @@ namespace LabProgramacion_Agenda_Semana1
 
         private void Agregar_Contacto_Load(object sender, EventArgs e)
         {
-            // Llama a un método que inicializa los componentes de la interfaz de usuario,
-            // configurando controles como botones, cuadros de texto, el DataGridView, etc.
-            InitializeComponent();
+
             //Crea una nueva instancia de la clase ConexionBD, que se utiliza para interactuar con la base de datos
             ConexionBD conexion = new ConexionBD();
             //Llama a un método que carga los contactos en un control TreeView, organizándolos por categorías
@@ -103,7 +101,7 @@ namespace LabProgramacion_Agenda_Semana1
         {
             //Abre un formulario para modificar un contacto existente
             Modificar_Contacto frm = new Modificar_Contacto();
-            frm.ShowDialog();
+            frm.Show();
             this.Hide();
         }
 
@@ -111,7 +109,14 @@ namespace LabProgramacion_Agenda_Semana1
         {
             // Abre un formulario para eliminar un contacto
             Eliminar_Contacto frm = new Eliminar_Contacto();
-            frm.ShowDialog();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Inicio inicio = new Inicio();
+            inicio.Show();
             this.Hide();
         }
     }

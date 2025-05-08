@@ -32,7 +32,7 @@ namespace LabProgramacion_Agenda_Semana1
         {
             //Permite al usuario cambiar los detalles de un contacto existente.
             Modificar_Contacto frm = new Modificar_Contacto();
-            frm.ShowDialog();
+            frm.Show();
             this.Hide();
         }
 
@@ -40,7 +40,7 @@ namespace LabProgramacion_Agenda_Semana1
         {
             //Eliminar un contacto
             Eliminar_Contacto frm = new Eliminar_Contacto();
-            frm.ShowDialog();
+            frm.Show();
             this.Hide();
         }
 

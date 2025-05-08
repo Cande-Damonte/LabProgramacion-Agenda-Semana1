@@ -29,7 +29,7 @@ namespace LabProgramacion_Agenda_Semana1
                 using (OleDbCommand comando = new OleDbCommand())
                 {
                     comando.Connection = conexion;
-                    comando.CommandText = "SELECT * FROM Contacto ORDER BY Categoria"; // Ordenar por categoría para una mejor visualización
+                    comando.CommandText = "SELECT * FROM Contactos ORDER BY Categoria"; // Ordenar por categoría para una mejor visualización
 
                     using (OleDbDataAdapter adaptador = new OleDbDataAdapter(comando))
                     {
@@ -52,7 +52,7 @@ namespace LabProgramacion_Agenda_Semana1
 
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "SELECT * FROM Contacto";// Selecciona todos los contactos.
+                comando.CommandText = "SELECT * FROM Contactos";// Selecciona todos los contactos.
 
                 DataTable tablaContactos = new DataTable(); // Crea un DataTable para almacenar los datos.
 
@@ -75,7 +75,7 @@ namespace LabProgramacion_Agenda_Semana1
                 {
                     comando.Connection = conexion;
                     comando.CommandType = CommandType.Text;
-                    comando.CommandText = "INSERT INTO Contacto (Nombre, Apellido, Telefono,Correo, Categoria) " +
+                    comando.CommandText = "INSERT INTO Contactos (Nombre, Apellido, Telefono,Correo, Categoria) " +
                                "VALUES (@Nombre, @Apellido, @Telefono, @Correo, @Categoria)";
 
                     comando.Parameters.AddWithValue("@Nombre", nuevoContacto.Nombre);
@@ -88,6 +88,7 @@ namespace LabProgramacion_Agenda_Semana1
                     {
                         conexion.Open();
                         comando.ExecuteNonQuery();
+                        MessageBox.Show("Contacto agregado correctamente.");
                     }
                     catch (Exception ex)
                     {
@@ -114,7 +115,7 @@ namespace LabProgramacion_Agenda_Semana1
                     //Define la instrucción SQL que se va a ejecutar, en este caso,
                     //un comando UPDATE que modifica los campos de un contacto en la tabla Contacto donde el Id coincide con el ID del contacto
                     comando.CommandText
-                         = @"UPDATE Contacto
+                         = @"UPDATE Contactos
                                  SET Nombre = @nuevoNombre,
                                      Apellido = @nuevoApellido,
                                      Telefono = @nuevoTelefono,
@@ -180,7 +181,7 @@ namespace LabProgramacion_Agenda_Semana1
                     //Indica que el comando contendrá una cadena SQL
                     comando.CommandType = CommandType.Text;
                     // Es un comando DELETE que elimina un contacto de la tabla Contacto donde el Id coincide con el parámetro @id
-                    comando.CommandText = @"DELETE FROM Contacto WHERE Id = @id";
+                    comando.CommandText = @"DELETE FROM Contactos WHERE Id = @id";
 
                     // Agregar el parámetro
                     comando.Parameters.AddWithValue("@id", id);
